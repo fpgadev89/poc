@@ -1,0 +1,5 @@
+root@ST1_ME-XU8-7EV-2I-D12E:~# v4l2-ctl --list-formats-ext
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'GREY' (8-bit Greyscale)
