@@ -2,7 +2,7 @@
 Since I want to dump raw greyscale frames from my camera (MONO 8 Greyscale pixel format), 
 I have bypassed these 3 blocks in device-tree: demosaic, gamma_lut and proc_ss. 
 I thought that these 3 blocks are mainly for color-processing and my camera is mono/ greyscale, 
-so I have bpassed them in device tree. 
+so I have bypassed them in device tree. 
 
 location: project-spec/meta-user/recipes-bsp/device-tree/files/pl-custom.dtsi
 
