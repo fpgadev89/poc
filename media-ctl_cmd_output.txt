@@ -1,4 +1,4 @@
-NOTE: Since my camera is greyscale, I have used MEDIA_BUS_FMT_Y8_1X8 in code.
+NOTE: Since my camera is greyscale, I have used MEDIA_BUS_FMT_Y8_1X8 in code. I see that blocks demosaic, gamma_lut and vproc_ss are indeed bypassed. I get below topology -
 
 root@ST1_ME-XU8-7EV-2I-D12E:~# media-ctl -p
 Media controller API version 5.4.0
