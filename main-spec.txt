@@ -1,0 +1,5 @@
+- I2C address of my camera/sensor: 0x25
+- 1 lane (1 data lane + 1 clock lane) at 1000Mbps
+- MONO 8 Greyscale pixel format
+- MIPI CSI2 output
+- Color-Lut: Only “GREYSCALE”
