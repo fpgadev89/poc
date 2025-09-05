@@ -1,0 +1,24 @@
+diff --git a/drivers/media/platform/xilinx/xilinx-csi2rxss.c b/drivers/media/platform/xilinx/xilinx-csi2rxss.c
+index 6f8aa15..d1f1508 100644
+--- a/drivers/media/platform/xilinx/xilinx-csi2rxss.c
++++ b/drivers/media/platform/xilinx/xilinx-csi2rxss.c
+@@ -114,8 +114,8 @@
+  * Source pad connected to next module like demosaic.
+  */
+ #define XCSI_MEDIA_PADS                2
+-#define XCSI_DEFAULT_WIDTH     1920
+-#define XCSI_DEFAULT_HEIGHT    1080
++#define XCSI_DEFAULT_WIDTH     640     // my camera has resolution of 640 x 480
++#define XCSI_DEFAULT_HEIGHT    480
+ 
+ #define XCSI_VCX_START         4
+ #define XCSI_MAX_VC            4
+@@ -1042,7 +1042,7 @@ static int xcsi2rxss_probe(struct platform_device *pdev)
+        xcsi2rxss->default_format.code =
+                xcsi2rxss_get_nth_mbus(xcsi2rxss->datatype, 0);
+        xcsi2rxss->default_format.field = V4L2_FIELD_NONE;
+-       xcsi2rxss->default_format.colorspace = V4L2_COLORSPACE_SRGB;
++       xcsi2rxss->default_format.colorspace = V4L2_COLORSPACE_RAW;   // my camera is greyscale
+        xcsi2rxss->default_format.width = XCSI_DEFAULT_WIDTH;
+        xcsi2rxss->default_format.height = XCSI_DEFAULT_HEIGHT;
+        xcsi2rxss->format = xcsi2rxss->default_format;
