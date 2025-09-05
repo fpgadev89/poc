@@ -1,0 +1,37 @@
+NOTE: Since my camera is greyscale, I have used MEDIA_BUS_FMT_Y8_1X8 in code.
+
+root@ST1_ME-XU8-7EV-2I-D12E:~# media-ctl -p
+Media controller API version 5.4.0
+
+Media device information
+------------------------
+driver          xilinx-video
+model           Xilinx Video Composite Device
+serial          
+bus info        
+hw revision     0x0
+driver version  5.4.0
+
+Device topology
+- entity 1: video_cap output 0 (1 pad, 1 link)
+            type Node subtype V4L flags 0
+            device node name /dev/video0
+	pad0: Sink
+		<- "b0000000.mipi_csi2_rx_subsystem":0 [ENABLED]
+
+- entity 5: b0000000.mipi_csi2_rx_subsystem (2 pads, 2 links)
+            type V4L2 subdev subtype Unknown flags 0
+            device node name /dev/v4l-subdev0
+	pad0: Source
+		[fmt:Y8_1X8/640x480 field:none colorspace:unknown]
+		-> "video_cap output 0":0 [ENABLED]
+	pad1: Sink
+		[fmt:Y8_1X8/640x480 field:none colorspace:unknown]
+		<- "mycamera 1-0025":0 [ENABLED]
+
+- entity 8: mycamera 1-0025 (1 pad, 1 link)
+            type V4L2 subdev subtype Sensor flags 0
+            device node name /dev/v4l-subdev1
+	pad0: Source
+		[fmt:Y8_1X8/640x480 field:none colorspace:unknown xfer:none]
+		-> "b0000000.mipi_csi2_rx_subsystem":1 [ENABLED]
