@@ -1,0 +1,28 @@
+NOTE: below yavta command halts/ stops - nothing happens
+
+root@ST1_ME-XU8-7EV-2I-D12E:~# yavta -c1 -F -fY8 -s640x480 /dev/video0 
+Device /dev/video0 opened.
+Device `video_cap output 0' on `platform:video_cap:0' is a video output (without mplanes) device.
+Video format set: Y8 (59455247) 640x480 field none, 1 planes: 
+ * Stride 640, buffer size 307200
+Video format: Y8 (59455247) 640x480 field none, 1 planes: 
+ * Stride 640, buffer size 307200
+8 buffers requested.
+length: 1 offset: 4127127616 timestamp type/source: mono/EoF
+Buffer 0/0 mapped at address 0x7fbdbfd000.
+length: 1 offset: 4127127616 timestamp type/source: mono/EoF
+Buffer 1/0 mapped at address 0x7fbdbb2000.
+length: 1 offset: 4127127616 timestamp type/source: mono/EoF
+Buffer 2/0 mapped at address 0x7fbdb67000.
+length: 1 offset: 4127127616 timestamp type/source: mono/EoF
+Buffer 3/0 mapped at address 0x7fbdb1c000.
+length: 1 offset: 4127127616 timestamp type/source: mono/EoF
+Buffer 4/0 mapped at address 0x7fbdad1000.
+length: 1 offset: 4127127616 timestamp type/source: mono/EoF
+Buffer 5/0 mapped at address 0x7fbda86000.
+length: 1 offset: 4127127616 timestamp type/source: mono/EoF
+Buffer 6/0 mapped at address 0x7fbda3b000.
+length: 1 offset: 4127127616 timestamp type/source: mono/EoF
+Buffer 7/0 mapped at address 0x7fbd9f0000.
+
+// halts/stops - nothing happens
