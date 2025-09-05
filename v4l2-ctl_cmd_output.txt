@@ -1,0 +1,3 @@
+v4l2-ctl --set-fmt-video=width=640,height=480,pixelformat=Y8 --stream-mmap --stream-count=1 -d /dev/video0 --stream-to=test.raw
+
+Above command also halts/ stops
